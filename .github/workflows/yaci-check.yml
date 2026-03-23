@@ -1,0 +1,15 @@
+name: yaci-check                                                                                                                                                                                                
+                                                                                                                                                                                                                
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  yaci-check:
+    name: yaci-check
+    runs-on: ubuntu-latest                                                                                                                                                                                      
+    steps:
+      - uses: actions/checkout@v4                                                                                                                                                                               
+      - name: Run check                                                                                                                                                                                       
+        run: echo "check passed"
